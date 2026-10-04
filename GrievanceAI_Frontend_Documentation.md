@@ -9,16 +9,15 @@ This document outlines the current state of the GrievanceAI frontend development
 We have successfully developed the **Frontend Landing Page** for **GrievanceAI – AI-Powered Disaster Compensation Assistance System**. 
 
 The current application is a single-page React frontend consisting of the following sections:
-- **Navigation Bar**: Includes branding and links to page sections, plus a prominent "Chat on WhatsApp" call-to-action (CTA). Features a hamburger menu for mobile devices.
+- **Navigation Bar**: Includes branding and links to page sections, plus a hamburger menu for mobile devices.
 - **Hero Section**: Introduces the core value proposition ("Get the Right Disaster Compensation Information — Simply") alongside primary and secondary CTA buttons.
 - **Trust & Information Banner**: Emphasizes that the guidance relies on authorized government documents without incorrectly claiming to be an official government service.
 - **Services Section**: Highlights six key features (Identify Loss, Check Eligibility, Know Compensation, Document Checklist, Application Guidance, Marathi & English) using a clean card-based layout with descriptive icons.
-- **How It Works**: Visualizes the 4-step user journey from stating a problem to getting guidance on WhatsApp.
-- **WhatsApp CTA**: A dedicated, highly visible section driving users to the WhatsApp chatbot.
+- **How It Works**: Visualizes the 4-step user journey from describing a problem to receiving clear, actionable guidance.
 - **About & Disclaimer**: Explains the system's AI/RAG capabilities and clearly outlines the limitations of the assistance provided.
 - **Footer**: Contains copyright info, quick links, and identifies the system as an academic project.
 
-All WhatsApp links are governed by a single configuration file (`src/config.js`), making it easy to swap the placeholder URL with your actual WhatsApp Business number once the backend is ready.
+The landing page currently has no WhatsApp links. Add a verified WhatsApp Business number and chatbot endpoint before enabling WhatsApp contact options.
 
 ---
 
@@ -52,7 +51,6 @@ The application follows a clean, component-based hierarchy:
 2. **`index.css`**: Configures Tailwind CSS (`@import "tailwindcss";`) and establishes global styling constraints.
 3. **`App.jsx`**: Acts as the main container. It imports all individual layout components (Navbar, Hero, Services, etc.) and stacks them vertically to construct the landing page.
 4. **`components/` Directory**: Contains isolated, functional React components. Each file is responsible only for its specific visual section. This modularity ensures that if you want to edit the "How It Works" section, you only touch `HowItWorksSection.jsx`.
-5. **`config.js`**: Contains exported constants (e.g., `WHATSAPP_URL`). By referencing this constant in the Navbar, Hero, and CTA components, updating the WhatsApp number requires editing only one single line of code instead of searching through the entire codebase.
 
 ---
 

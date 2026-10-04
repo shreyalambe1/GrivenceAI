@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { WHATSAPP_URL } from '../config';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,14 +19,6 @@ const Navbar = () => {
             <a href="#how-it-works" className="text-gray-700 hover:text-teal-600 font-medium">How It Works</a>
             <a href="#services" className="text-gray-700 hover:text-teal-600 font-medium">Services</a>
             <a href="#about" className="text-gray-700 hover:text-teal-600 font-medium">About</a>
-            <a 
-              href={WHATSAPP_URL} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md font-medium transition-colors"
-            >
-              Chat on WhatsApp
-            </a>
           </div>
           <div className="flex items-center md:hidden">
             <button 
@@ -49,14 +40,6 @@ const Navbar = () => {
             <a href="#how-it-works" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-teal-600 rounded-md">How It Works</a>
             <a href="#services" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-teal-600 rounded-md">Services</a>
             <a href="#about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-teal-600 rounded-md">About</a>
-            <a 
-              href={WHATSAPP_URL}
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="block px-3 py-2 text-base font-medium text-white bg-green-600 hover:bg-green-700 rounded-md mt-4 text-center"
-            >
-              Chat on WhatsApp
-            </a>
           </div>
         </div>
       )}

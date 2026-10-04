@@ -4,7 +4,6 @@ import HeroSection from './components/HeroSection';
 import TrustBanner from './components/TrustBanner';
 import ServicesSection from './components/ServicesSection';
 import HowItWorksSection from './components/HowItWorksSection';
-import WhatsAppCTA from './components/WhatsAppCTA';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
 
@@ -17,7 +16,6 @@ function App() {
         <TrustBanner />
         <ServicesSection />
         <HowItWorksSection />
-        <WhatsAppCTA />
         <AboutSection />
       </main>
       <Footer />

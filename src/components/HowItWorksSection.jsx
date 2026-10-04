@@ -22,8 +22,8 @@ const steps = [
   },
   {
     id: 4,
-    title: 'Get Simple Guidance on WhatsApp',
-    description: 'Receive clear, actionable steps directly on your phone.',
+    title: 'Get Simple Guidance',
+    description: 'Receive clear, actionable steps for your situation.',
     icon: Smartphone,
   },
 ];
