@@ -1,5 +1,7 @@
 import React from 'react';
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200">
@@ -46,7 +48,7 @@ const Footer = () => {
         
         <div className="mt-12 border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-base text-gray-400">
-            &copy; {new Date().getFullYear()} GrievanceAI Project. All rights reserved.
+            &copy; {currentYear} GrievanceAI Project. All rights reserved.
           </p>
           <p className="text-sm text-gray-400 mt-4 md:mt-0">
             Not an official Government of Maharashtra service.
