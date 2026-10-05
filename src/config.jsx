@@ -4,7 +4,7 @@
  */
 
 // Default placeholder if environment variable is not defined
-const DEFAULT_WHATSAPP_NUMBER = "919XXXXXXXXX";
+const DEFAULT_WHATSAPP_NUMBER = "919665667095";
 
 /**
  * Returns the configured WhatsApp Business destination number.
