@@ -1,5 +1,5 @@
 import React from 'react';
-import { Info, MessageCircle } from 'lucide-react';
+import { MessageCircle, Info } from 'lucide-react';
 import { WHATSAPP_URL } from '../config';
 
 const HeroSection = () => {
@@ -17,20 +17,20 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 sm:flex sm:justify-center lg:justify-start gap-4 flex-col sm:flex-row">
               <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg transition-colors shadow-sm"
+              >
+                <MessageCircle className="mr-2" size={24} />
+                Chat on WhatsApp
+              </a>
+              <a
                 href="#how-it-works"
                 className="mt-3 w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-gray-300 text-base font-medium rounded-md text-teal-700 bg-white hover:bg-teal-50 md:py-4 md:text-lg transition-colors shadow-sm"
               >
                 <Info className="mr-2" size={24} />
                 How It Works
-              </a>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 w-full sm:w-auto flex items-center justify-center px-8 py-3 border border-teal-600 text-base font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg transition-colors shadow-sm"
-              >
-                <MessageCircle className="mr-2" size={24} />
-                Chat on WhatsApp
               </a>
             </div>
           </div>
@@ -42,7 +42,7 @@ const HeroSection = () => {
                    <div className="w-6 h-6 bg-teal-500 rounded-full"></div>
                 </div>
                 <div className="absolute bottom-4 right-4 w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-md">
-                   <Info size={32} className="text-teal-500" />
+                   <MessageCircle size={32} className="text-green-500" />
                 </div>
                 <div className="flex flex-col space-y-4 items-center">
                     <div className="w-32 h-4 bg-teal-200 rounded"></div>

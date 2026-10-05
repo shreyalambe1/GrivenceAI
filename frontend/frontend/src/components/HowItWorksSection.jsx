@@ -1,6 +1,5 @@
 import React from 'react';
-import { MessageCircle, MessageSquare, Cpu, FileSearch, Smartphone } from 'lucide-react';
-import { WHATSAPP_URL } from '../config';
+import { MessageSquare, Cpu, FileSearch, Smartphone } from 'lucide-react';
 
 const steps = [
   {
@@ -23,8 +22,8 @@ const steps = [
   },
   {
     id: 4,
-    title: 'Get Simple Guidance',
-    description: 'Receive clear, actionable steps for your situation.',
+    title: 'Get Simple Guidance on WhatsApp',
+    description: 'Receive clear, actionable steps directly on your phone.',
     icon: Smartphone,
   },
 ];
@@ -72,17 +71,6 @@ const HowItWorksSection = () => {
               );
             })}
           </div>
-        </div>
-        <div className="mt-12 text-center">
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-md text-base font-medium text-white bg-teal-600 hover:bg-teal-700 transition-colors shadow-sm"
-          >
-            <MessageCircle className="mr-2" size={22} />
-            Start Chat on WhatsApp
-          </a>
         </div>
       </div>
     </section>
